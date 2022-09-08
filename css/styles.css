@@ -90,9 +90,6 @@ img {
   cursor: pointer;
 }
 
-
-
-
 .nav-link-active::after{
   content:"";
   position: absolute;
@@ -108,14 +105,10 @@ img {
   
 }
 
-
-
 .nav-link:hover ,
 .nav-link:focus  {
   color: var(--hover-color);
 }
-
-
 
 .contact-list {
   display: flex;
@@ -226,7 +219,6 @@ img {
 
 .benefits-list {
   display: flex;
-
 }
 
 .benefits-item {
@@ -245,8 +237,6 @@ img {
   margin-bottom: 10px;
 }
 
-
-
 .benefits-description {
   font-size: 14px;
   line-height: 1.71;
@@ -257,7 +247,6 @@ img {
 /* чем мы занимаемся */
 
 .work-section {
-  /* padding-top: 94px; */
   padding-bottom: 94px;
 }
 
@@ -325,11 +314,6 @@ img {
 
 .team-list {
   display: flex;
-  /* max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto; */
-  /* padding-right: 15px; */
-  /* padding-left: 15px; */
 }
 
 .team-item {
@@ -347,7 +331,6 @@ img {
   padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
-
 }
 
 .team-name {
@@ -399,6 +382,7 @@ margin-right: 0;
   background-color: #2196F3;
   fill: #ffffff
 }
+
 .social-icon:hover,
 .social-icon:focus {
   fill: #ffffff
@@ -437,7 +421,6 @@ margin-bottom: 50px;
    border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: #AFB1B8;
-  /* outline:1px solid red ; */
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 cursor: pointer;
 }
@@ -534,11 +517,8 @@ margin-bottom: 20px;
   display: flex;
 }
 
-
-
 .socials-item {
   margin-right: 10px;
- 
 }
 
 .socials-item:last-child {
@@ -556,13 +536,11 @@ margin-right: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .socials-link:hover,
 .socials-link:focus {
   background-color: #2196F3;
   fill: #ffffff
 }
-
 
 .footer-form {
   margin-left: 93px;
@@ -599,9 +577,6 @@ color: var(--main-background-color);
   border-color: var(--hover-color);
 }
 
-
-
-
 .footer-button {
 width: 200px;
 height: 50px;
@@ -628,7 +603,6 @@ color: #FFFFFF;
 }
 
 
-
 /* модальное окно */
 
 .backdrop.is-hidden {
@@ -636,7 +610,6 @@ color: #FFFFFF;
   visibility: hidden;
   pointer-events: none;
 }
-
 
 .backdrop {
   position: fixed;
@@ -647,7 +620,8 @@ color: #FFFFFF;
   opacity: 1;
   visibility: visible;
   transition:opacity 250ms linear, visibility 250ms linear;
-  /* background:var(--main-background-color) */
+  background-color: rgba(0, 0, 0, 0.2);
+
 }
 
 .backdrop.is-hidden .modal {
@@ -665,15 +639,12 @@ color: #FFFFFF;
   transition:transform 250ms linear ;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
- 
 }
 
 .icon-close {
   fill: var(--body-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .button-close {
   position: absolute;
@@ -683,7 +654,6 @@ color: #FFFFFF;
   top: 8px;
   border-radius: 50%;
   background-color:var(--main-background-color);
-
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -699,10 +669,6 @@ color: #FFFFFF;
 .button-close:hover .icon-close {
   fill:var(--hover-color);
 }
-
-
-
-
 
 .modal {
   padding: 40px;
@@ -729,7 +695,6 @@ border-radius: 4px;
   margin-top: 12px;
 }
 
-
 .form-obiect {
   display: block;
  margin-bottom: 4px;
@@ -737,13 +702,11 @@ border-radius: 4px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: #757575;
-
 }
 
 .form-obiect:nth-child(4) {
   margin-bottom: 0;
 }
-
 
 .form-field {
   margin-bottom: 10px;
@@ -778,6 +741,11 @@ fill: var(--hover-color);
 
 textarea {
   cursor: pointer;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .form-icon {
@@ -788,7 +756,6 @@ textarea {
  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .form-textarea {
   width: 100%;  
   height:120px;
@@ -797,11 +764,21 @@ textarea {
   border-radius: 4px;
   outline: transparent;
   margin-bottom: 20px;
+  resize: none;
 }
 
+.form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
-
-
+.modal-check {
+  background-color: #2196F3;
+  border-radius: 2px;
+  fill: var(--main-background-color);
+}
 
 .form-link {
   display: block;
@@ -810,14 +787,6 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: #757575;
 margin-left: 7px;
-}
-
-
-.form-agreement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
 }
 
 .form-link-decoration {
@@ -838,6 +807,7 @@ border: none;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+line-height: 1.87;
 color: var(--main-background-color);
 cursor: pointer;
 }
