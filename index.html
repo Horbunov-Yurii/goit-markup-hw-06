@@ -69,7 +69,7 @@
       <!-- почему мы -->
       <section class="benefits-section">
         <div class="container">
-          <h2 hidden class="benefits-uptitle">Почему мы</h2>
+          <h2 class="benefits-uptitle visually-hidden">Почему мы</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
               <div class="benefits-icon">
@@ -523,17 +523,19 @@
             name="feedback"
             placeholder="Введіть текст" id="coment"
           ></textarea>
-
-
-          <span class="form-agreement">
-            <!-- <input type="checkbox" name="hobby" value="music" checked id="agreement" /> -->
-            <svg class="modal-check" width="16" height="15">
-              <use href="./images/symbol-defs.svg#modal-check"></use>
-            </svg>
-            <label class="form-link" for="agreement">Погоджуюся з розсилкою та приймаю
-              <a class="form-link-decoration" href="#">Умови договору</a>
+          <div class="form-agreement">
+            <label class="check-label" for="user-check"> 
+               <input class="form-checkbox visually-hidden "  type="checkbox" name="user-check" id="user-check"/>
+               <span class="form-check">  
+                  <svg class="check-icon" width="11" height="8">
+                   <use href="./images/symbol-defs.svg#modal-check"></use>
+                  </svg>
+                </span>
+              <span> Погоджуюся з розсилкою та приймаю
+              </span>
             </label>
-          </span>
+            <a class="form-link-decoration" href="#">Умови договору</a>
+          </div>
           <button class="form-button" type="submit">Отправить</button>
         </form>
         <button class="button-close" data-modal-close>
